@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 function Item({ name, category }) {
@@ -12,8 +13,7 @@ function Item({ name, category }) {
       <span>{name}</span>
       <span className="category">{category}</span>
       <button
-        className={isInCart ? "remove" : "add"}
-        onClick={handleAddToCartClick}
+        className={isInCart ? "remove" : "add"} onClick={handleAddToCartClick}
       >
         {isInCart ? "Remove From" : "Add to"} Cart
       </button>
